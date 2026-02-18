@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Question_10</title>
+</head>
+<body>
+  <p>Student Name: Kevin Bown</p>
+  <p>Student ID: 2201011538</p>
+  <p>Assignment 1</p>
+  <p>Question 10</p>
+  <script>
+    // Select all paragraphs
+    const paragraphs = document.querySelectorAll('p');
+
+    paragraphs.forEach(p => {
+      // Changes colour to red
+      p.addEventListener('mouseenter', () => {
+        p.style.color = 'red';
+      });
+
+      //Resets colour when mouse leaves
+      p.addEventListener('mouseleave', () => {
+        p.style.color = '';
+      });
+    });
+  </script>
+</body>
+</html>
