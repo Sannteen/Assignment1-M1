@@ -1,4 +1,8 @@
-function myFunction() {
-    let paragraph = document.getElementById("demo");
-    paragraph.remove();
+function removeParagraph() {
+    let paragraph = document.getElementById("remove-paragraph");
+    if (paragraph) {
+        paragraph.remove();
+    } else {
+        console.log("Paragraph not found");
+    }
 }
