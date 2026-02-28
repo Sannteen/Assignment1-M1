@@ -2,10 +2,12 @@
     var button1 = document.querySelector("#button1");
 
 button1.addEventListener("click", function(){
-    var elements = document.querySelectorAll("textarea, p");
+    var elements = document.querySelectorAll(".card textarea, .card p");
 
-    elements.forEach(el => {
-        el.classList.toggle("highlight-border");
+    elements.forEach(function(element) {
+        element.style.border = "2px solid red";
     });
+
+ 
 });
 

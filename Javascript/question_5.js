@@ -1,8 +1,11 @@
 //getting the paragraph element by its id
-const paragraph = document.getElementById("targetparagraph");
+const paragraph1 = document.querySelectorAll("#targetparagraph");
 
 //adding click event listener to the paragraph
-paragraph.addEventListener("click", function() {
-    paragraph.style.color = "blueviolet"; // changing the text color to red when clicked
-    paragraph.style.backgroundColor = "rgb(220, 220, 220)"; // changing the background color to yellow when clicked
+paragraph1.forEach(function(p) {
+    p.addEventListener("click", function() {
+        p.style.color = "White"; // changing the text color to red when clicked
+        p.style.backgroundColor = "rgba(0, 0, 0, 0.73)"; // changing the background color to yellow when clicked
+    });
 });
+
